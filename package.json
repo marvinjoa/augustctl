@@ -1,13 +1,13 @@
 {
   "name": "augustctl",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Controller for August Smart Lock",
-  "author": "Dan Walters <dan@walters.io>",
+  "author": "Erick Hitter <contact@ethitter.com>",
   "license": "MIT",
   "main": "index.js",
   "bin": {
-    "augustctl": "./cli.js",
-    "augustctld": "./server.js"
+    "augustctl": "cli.js",
+    "augustctld": "server.js"
   },
   "keywords": [
     "august",
@@ -15,14 +15,22 @@
     "bluetooth"
   ],
   "dependencies": {
-    "bluebird": "^2.9.34",
-    "debug": "^2.2.0",
-    "express": "^4.13.3",
-    "morgan": "^1.6.1",
-    "asyncawait": "^0.7.4"
+    "apicache": "^1.6.3",
+    "connect-timeout": "^1.9.0",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "@abandonware/noble": "^1.9.2-23",
+    "axios": "^1.6.5"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/sretlawd/augustctl/augustctl.git"
+    "url": "https://github.com/ethitter/augustctl.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
