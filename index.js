@@ -1,9 +1,9 @@
 'use strict';
 
-var Lock = require('./lib/lock');
-var scan = require('./lib/scan');
+const Lock = require('./lib/lock');
+const scan = require('./lib/scan');
 
 module.exports = {
-	Lock: Lock,
-	scan: scan
+  Lock: Lock,
+  scan: scan
 };
